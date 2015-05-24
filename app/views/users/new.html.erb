@@ -1,0 +1,47 @@
+<h1>Alphabet Bubbles</h1>
+
+
+<%= form_for @user do |f|%>
+
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.label :confirm_password %>
+  <%= f.password_field :password_confirmation %>
+  <%= f.submit %>
+
+<% end %>
+
+<br>
+
+<%= form_tag('/log_in', method: :post) do %>
+
+   <%= label_tag :username %>
+   <%= text_field_tag :username %>
+   <%= label_tag :password %>
+   <%= password_field_tag :password %>
+   <br>
+   <%= submit_tag "Sign-In" %>
+
+ <% end %>
+
+ <!-- <script type="text/javascript">
+     $('input[name="user[password]"]').on('keyup', function(){
+       var field = $(this);
+       if (field.val().length < 8){
+         $(this).css({backgroundColor: 'pink'});
+       } else {
+         $(this).css({backgroundColor: 'lightgreen'});
+       }
+     });
+     $('input[name="user[password_confirmation]"]').on('keyup', function(){
+       var passwordConfirmationField = $(this);
+       var passwordField = $('input[name="user[password]"]');
+       if (passwordField.val() != passwordConfirmationField.val() ){
+         $(this).css({backgroundColor: 'pink'});
+       } else {
+         $(this).css({backgroundColor: 'lightgreen'});
+       }
+     });
+   </script> -->
