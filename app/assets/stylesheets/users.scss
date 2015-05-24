@@ -1,3 +1,32 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: sans-serif;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,253,11,.5);
+  border: solid purple 2px;
+  border-radius: 100px;
+  color: purple;
+  font-size: 50px;
+  line-height: 100px;
+  position: relative;
+  text-align: center;
+  top: -200px;
+  animation: drop 10s;
+}
+
+@keyframes drop {
+  0% { top: -200px;}
+  100% { top: 730px;}
+}
+
+@-webkit-keyframes drop {
+  0% { top: -200px;}
+  100% { top: 550px;}
+}
