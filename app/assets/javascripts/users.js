@@ -105,7 +105,6 @@ $(document).ready(function(){
 
       else if(event.keyCode == 122){
         $('.divZ').css("visibility", "hidden");
-        $('#newGame').css("display", "block");
       }
 
     }); //closes document.keypress
@@ -113,5 +112,11 @@ $(document).ready(function(){
     } //closes popDroplet()
 
       popDroplet();
+
+    function showReplay(){
+      $('#newGame').css("display", "block");
+    }
+
+    setInterval(showReplay, 36000);
 
  }); // closes document.ready
