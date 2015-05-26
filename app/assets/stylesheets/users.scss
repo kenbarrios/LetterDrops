@@ -16,19 +16,19 @@ div {
   line-height: 100px;
   position: relative;
   text-align: center;
-  top: -4000px;
-  animation: drop 10s;
-  animation-delay: 3s;
+  top: -1000px;
+  animation: drop 15s;
+  animation-delay: 2s;
 }
 
 @keyframes drop {
-  0% { top: -200px;}
-  100% { top: 730px;}
+  0% { top: -1000px;}
+  100% { top: 800px;}
 }
 
 @-webkit-keyframes drop {
-  0% { top: -200px;}
-  100% { top: 550px;}
+  0% { top: -1000px;}
+  100% { top: 800px;}
 }
 
 .divB {
