@@ -6,6 +6,28 @@ body {
   overflow-y: hidden;
   font-family: sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+#newGame {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  display: none;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#newGame:hover {
+  background-color: rgba(150,150,150, .5);
+  border: solid black 1px;
+  color: black;
+}
+
 div {
   width: 100px;
   height: 100px;
