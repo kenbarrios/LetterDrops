@@ -9,16 +9,16 @@ body {
 div {
   width: 100px;
   height: 100px;
-  background-color: rgba(255,253,11,.5);
-  border: solid purple 2px;
+  border: solid black 1px;
   border-radius: 100px;
-  color: purple;
+  display: inline-block;
   font-size: 50px;
   line-height: 100px;
   position: relative;
   text-align: center;
-  top: -200px;
+  top: -4000px;
   animation: drop 10s;
+  animation-delay: 3s;
 }
 
 @keyframes drop {
@@ -29,4 +29,104 @@ div {
 @-webkit-keyframes drop {
   0% { top: -200px;}
   100% { top: 550px;}
+}
+
+.divB {
+  animation-delay: 4s;
+}
+
+.divC {
+  animation-delay: 5s;
+}
+
+.divD {
+  animation-delay: 6s;
+}
+
+.divE {
+  animation-delay: 7s;
+}
+
+.divF {
+  animation-delay: 8s;
+}
+
+.divG {
+  animation-delay: 9s;
+}
+
+.divH {
+  animation-delay: 10s;
+}
+
+.divI {
+  animation-delay: 11s;
+}
+
+.divJ {
+  animation-delay: 12s;
+}
+
+.divK {
+  animation-delay: 13s;
+}
+
+.divL {
+  animation-delay: 14s;
+}
+
+.divM {
+  animation-delay: 15s;
+}
+
+.divN {
+  animation-delay: 16s;
+}
+
+.divO {
+  animation-delay: 17s;
+}
+
+.divP {
+  animation-delay: 18s;
+}
+
+.divQ {
+  animation-delay: 19s;
+}
+
+.divR {
+  animation-delay: 20s;
+}
+
+.divS {
+  animation-delay: 21s;
+}
+
+.divT {
+  animation-delay: 22s;
+}
+
+.divU {
+  animation-delay: 23s;
+}
+
+.divV {
+  animation-delay: 24s;
+}
+
+.divW {
+  animation-delay: 25s;
+}
+
+.divX {
+  animation-delay: 26s;
+}
+
+.divY {
+  animation-delay: 27s;
+}
+
+.divZ {
+  animation-delay: 28s;
 }
