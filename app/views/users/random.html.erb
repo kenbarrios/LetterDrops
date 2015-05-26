@@ -1,3 +1,7 @@
 <h1>Random Level</h1>
 
-<div>This screen will generate random alphabet bubbles</div>
+<% ('a'..'z').to_a.shuffle.each do |letter| %>
+  <div class="div<%= letter.upcase %>">
+    <%= letter %>
+  </div>
+<% end %>
