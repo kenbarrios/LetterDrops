@@ -39,7 +39,7 @@ div {
   position: relative;
   text-align: center;
   top: -1000px;
-  animation: drop 15s;
+  animation: drop 20s;
   animation-delay: 1s;
 }
 
@@ -52,6 +52,11 @@ div {
   0% { top: -1000px;}
   100% { top: 800px;}
 }
+
+
+////////////////////////
+// Alpha animation delay
+////////////////////////
 
 .divB {
   animation-delay: 2s;
@@ -152,3 +157,8 @@ div {
 .divZ {
   animation-delay: 28s;
 }
+
+
+/////////////////////////
+// Random animation delay
+/////////////////////////
