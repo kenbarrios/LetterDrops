@@ -1,8 +1,17 @@
 <h1>Random Level</h1>
-<a href="/random"><section id="newGame">Replay?</section></a>
+<a href="/random"><section class="newGame">Replay?</section></a>
+
+<% nums = (1..26).to_a %>
 
 <% ('a'..'z').to_a.shuffle.each do |letter| %>
-  <div class="div<%= letter.upcase %>">
+
+    <% num = nums.sample %>
+    <% index = nums.index(num) %>
+    <% nums.delete(index) %>
+    <div class="div<%= letter.upcase %>" id="drop<%= num %>">
+
     <%= letter %>
-  </div>
+
+    </div>
+
 <% end %>

@@ -11,5 +11,5 @@ app.popAlphaDroplet = function popDroplet(){
 
 
 app.replay = function showReplay(){
-      $('#newGame').css("display", "block");
+      $('.menu').css("display", "block");
     };
