@@ -1,3 +1,10 @@
 <h1>Words Level</h1>
 
 <p>Bubbles of words fall here!</p>
+
+<% file='vendor/assets/texts/cat_and_mouse.txt' %>
+<% File.readlines(file).each do |line| %>
+
+  <%= line %>
+
+<% end %>
