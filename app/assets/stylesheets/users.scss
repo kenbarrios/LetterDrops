@@ -11,21 +11,21 @@ a {
   text-decoration: none;
 }
 
-.newGame {
-  width: 200px;
-  height: 100px;
-  background-color: rgba(0,0,0,.5);
-  color: white;
+.menu {
+  width: 150px;
+  height: 75px;
+  background-color: white;
+  border: solid black 1px;
+  color: black;
   display: none;
-  line-height: 100px;
-  margin: 0 auto;
+  line-height: 75px;
+  margin: 5px auto;
   text-align: center;
 }
 
-#newGame:hover {
-  background-color: rgba(150,150,150, .5);
-  border: solid black 1px;
-  color: black;
+.menu:hover {
+  background-color: black;
+  color: white;
 }
 
 div {
