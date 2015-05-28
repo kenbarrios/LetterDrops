@@ -5,6 +5,12 @@ class UsersController < ApplicationController
   def menu
   end
 
+  def random
+  end
+
+  def words
+  end
+
   def new
     @user = User.new
   end

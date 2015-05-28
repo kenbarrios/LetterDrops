@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   #opening site should take people here to register/log-in
    get '/' => 'users#new'
    #the url below will follow the controller and controller-associated (#) page below
+   get '/menu' => 'users#menu'
+
    get '/alpha' => 'users#alpha'
 
    get '/random' => 'users#random'
 
-   get '/menu' => 'users#menu'
+   get '/words' => 'users#words'
 
 
    post '/log_in' => 'sessions#log_in_behavior'
