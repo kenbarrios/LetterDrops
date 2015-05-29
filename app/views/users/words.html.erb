@@ -1,10 +1,10 @@
 <h1>Words Level</h1>
 
-<p>Bubbles of words fall here!</p>
+<script type="text/javascript">
+ var app = app || {};
+ app.words = <%= @words_array.to_json.html_safe %>
+</script>
 
-<% file='vendor/assets/texts/cat_and_mouse.txt' %>
-<% File.readlines(file).each do |line| %>
-
-  <%= line %>
-
-<% end %>
+<p>
+<%= @words_array %>
+<p>

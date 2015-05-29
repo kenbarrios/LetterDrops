@@ -9,6 +9,9 @@ class UsersController < ApplicationController
   end
 
   def words
+    file='vendor/assets/texts/cat_and_mouse.txt'
+    @words = File.readlines(file)
+    @words_array = @words.sample.downcase
   end
 
   def new
