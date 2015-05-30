@@ -28,6 +28,23 @@ a {
   color: white;
 }
 
+.mainMenu {
+  width: 150px;
+  height: 75px;
+  background-color: white;
+  border: solid black 1px;
+  color: black;
+  display: block;
+  line-height: 75px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.mainMenu:hover {
+  background-color: black;
+  color: white;
+}
+
 div {
   width: 100px;
   height: 100px;
