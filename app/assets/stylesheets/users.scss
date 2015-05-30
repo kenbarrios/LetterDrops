@@ -40,7 +40,6 @@ div {
   text-align: center;
   top: -1000px;
   animation: drop 20s;
-  animation-delay: 1s;
 }
 
 @keyframes drop {
@@ -53,10 +52,25 @@ div {
   100% { top: 800px;}
 }
 
+.wordDrop {
+  height: 40px;
+  width: auto;
+  border: solid black 1px;
+  border-radius: 200px;
+  display: inline-block;
+  line-height: 40px;
+  margin: 10px;
+  padding: 15px;
+}
+
 
 ////////////////////////
 // Alpha animation delay
 ////////////////////////
+
+.divA {
+  animation-delay: 1s;
+}
 
 .divB {
   animation-delay: 2s;
@@ -162,6 +176,7 @@ div {
 /////////////////////////
 // Random animation delay
 /////////////////////////
+
 
 #drop1 {
   animation-delay: 2s;
