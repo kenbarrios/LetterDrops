@@ -1,14 +1,11 @@
-<h1>LetterDrops</h1>
+<h1 class="menuTitle">LetterDrops</h1>
 
 
 <%= form_for @user do |f|%>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.label :confirm_password %>
-  <%= f.password_field :password_confirmation %>
+  <%= f.text_field :username, :placeholder => :username %>
+  <%= f.password_field :password, :placeholder => :password %>
+  <%= f.password_field :password_confirmation, :placeholder => :confirm_password %>
   <%= f.submit %>
 
 <% end %>
@@ -17,10 +14,8 @@
 
 <%= form_tag('/log_in', method: :post) do %>
 
-   <%= label_tag :username %>
-   <%= text_field_tag :username %>
-   <%= label_tag :password %>
-   <%= password_field_tag :password %>
+   <%= text_field_tag :username, 'guest' %>
+   <%= password_field_tag :password, 'password' %>
    <%= submit_tag "Sign-In" %>
 
  <% end %>

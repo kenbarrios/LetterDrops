@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-#menuTitle {
+.menuTitle {
   text-align: center;
 }
 
@@ -27,15 +27,12 @@ nav h1 {
   width: 220px;
   display: inline-block;
   margin: 0px;
+  text-align: center;
 }
 
-.navRight {
-  height: 75px;
-  width: 350px;
-  display: block;
-  float: right;
-  margin: 0px;
-  text-align: center;
+nav h1:hover {
+  background-color: lightblue;
+  color: white;
 }
 
 nav a {
@@ -45,7 +42,8 @@ nav a {
 
 .navLink {
   width: 150px;
-  display: inline-block;
+  display: block;
+  float: right;
   margin: 0px;
   text-align: center;
 }
