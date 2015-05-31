@@ -2,10 +2,11 @@ var app = app || {};
 
 
 app.popWordDroplet = function wordDroplet(){
+  //create empty array to populate with keypresses
   var emptyArr = [];
 
   $(document).keypress(function(event){
-    //create empty array to populate with keypresses
+
     //push keypresses into empty array
     emptyArr.push(String.fromCharCode(event.keyCode).toLowerCase());
 
@@ -20,12 +21,21 @@ app.popWordDroplet = function wordDroplet(){
     screenText();
 
     //create variable of FIRST word bubble and inner text
-    var firstDrop = $('.wordDrop').first().text();
+    var firstDrop = $('.wordDroplet').first().text();
 
     if (firstDrop == typedOut) {
-      $('.wordDrop').first().detach();
+      $('.wordDroplet').first().detach();
       emptyArr = [];
     } //closes if stmt
+
+    //disable DELETE backpage default, and erase typos
+    $(document).keydown(function(e) {
+      if (e.keyCode == 8) {
+        e.preventDefault();
+        emptyArr = [];
+        $('.liveText').empty();
+      };
+    });
 
   }); //closes document.keypress
 

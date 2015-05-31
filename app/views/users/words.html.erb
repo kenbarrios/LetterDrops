@@ -1,10 +1,13 @@
 <h1>Words Level</h1>
 
 
+<% nums = (1..26).to_a %>
+
 <% @words_array.split(" ").each do |word| %>
 
-<p class="wordDrop"><%= word %></p>
+<p class="wordDroplet"><%= word %></p>
 
 <% end %>
 
+<br>
 <p class="liveText"></p>
