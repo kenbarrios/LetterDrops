@@ -14,6 +14,11 @@ app.popWordDroplet = function wordDroplet(){
 
     console.log(typedOut);
 
+    function screenText(){
+      $('.liveText').text(typedOut);
+    }
+    screenText();
+
     //create variable of FIRST word bubble and inner text
     var firstDrop = $('.wordDrop').first().text();
 
