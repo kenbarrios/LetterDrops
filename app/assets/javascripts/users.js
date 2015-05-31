@@ -6,6 +6,4 @@ $(document).ready(function(){
   };
 
   setHandlers();
-  setInterval(app.replay, 37000);
-
 })

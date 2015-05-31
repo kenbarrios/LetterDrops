@@ -1,15 +1,60 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: sans-serif;
 }
 
+#menuTitle {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
+
+nav {
+  height: 75px;
+  width: 100%;
+  line-height: 75px;
+}
+
+nav h1 {
+  height: 75px;
+  width: 220px;
+  display: inline-block;
+  margin: 0px;
+}
+
+.navRight {
+  height: 75px;
+  width: 350px;
+  display: block;
+  float: right;
+  margin: 0px;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.navLink {
+  width: 150px;
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+}
+
+.navLink:hover {
+  background-color: lightblue;
+  color: white;
+}
+
 
 .menu {
   width: 150px;
@@ -24,7 +69,7 @@ a {
 }
 
 .menu:hover {
-  background-color: black;
+  background-color: lightblue;
   color: white;
 }
 
@@ -32,7 +77,6 @@ a {
   width: 150px;
   height: 75px;
   background-color: white;
-  border: solid black 1px;
   color: black;
   display: block;
   line-height: 75px;
@@ -41,7 +85,7 @@ a {
 }
 
 .mainMenu:hover {
-  background-color: black;
+  background-color: lightblue;
   color: white;
 }
 
@@ -57,22 +101,6 @@ div {
   text-align: center;
   top: -1000px;
   animation: drop 20s alternate;
-}
-
-@keyframes drop {
-  0% { top: -850px;}
-  33%{left:0px;}
-  66%{left: 100px;}
-  99% {left:0px;}
-  100% { top: 800px;}
-}
-
-@-webkit-keyframes drop {
-  0% { top: -850px;}
-  33%{left:0px;}
-  66%{left: 100px;}
-  99% {left:0px;}
-  100% { top: 800px;}
 }
 
 .wordDroplet {
@@ -96,6 +124,22 @@ div {
   margin: 10px auto;
   text-align: center;
   text-decoration: underline;
+}
+
+@keyframes drop {
+  0% { top: -850px;}
+  33%{left:0px;}
+  66%{left: 100px;}
+  99% {left:0px;}
+  100% { top: 800px;}
+}
+
+@-webkit-keyframes drop {
+  0% { top: -850px;}
+  33%{left:0px;}
+  66%{left: 100px;}
+  99% {left:0px;}
+  100% { top: 800px;}
 }
 
 ////////////////////////

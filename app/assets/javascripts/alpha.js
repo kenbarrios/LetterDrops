@@ -9,8 +9,3 @@ app.popAlphaDroplet = function popDroplet(){
   }); //closes document.keypress
 
 } //closes popAlphaDroplet()
-
-
-app.replay = function showReplay(){
-      $('.menu').css("display", "block");
-    };
