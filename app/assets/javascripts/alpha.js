@@ -1,5 +1,8 @@
 var app = app || {};
 
+app.hideInstructions = function takeAway(){
+  $('.instructions').hide('slow');
+}
 
 app.popAlphaDroplet = function popDroplet(){
 

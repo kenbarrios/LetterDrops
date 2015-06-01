@@ -2,6 +2,17 @@
 <h1 class="menuTitle"><span>D</span><span>r</span><span>o</span><span>p</span><span>s</span></h1>
 
 <section id='homeInputs'>
+
+  <%= form_tag('/log_in', method: :post) do %>
+
+     <%= text_field_tag :username, 'guest' %>
+     <%= password_field_tag :password, 'password' %>
+     <%= submit_tag "Sign-In" %>
+
+   <% end %>
+
+  <br>
+
   <%= form_for @user do |f|%>
 
     <%= f.text_field :username, :placeholder => :username %>
@@ -11,15 +22,6 @@
 
   <% end %>
 
-  <br>
-
-  <%= form_tag('/log_in', method: :post) do %>
-
-     <%= text_field_tag :username, 'guest' %>
-     <%= password_field_tag :password, 'password' %>
-     <%= submit_tag "Sign-In" %>
-
-   <% end %>
 </section>
 
  <script type="text/javascript">

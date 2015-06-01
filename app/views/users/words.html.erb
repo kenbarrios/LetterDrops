@@ -17,7 +17,6 @@
   </a>
 </nav>
 
-
 <% nums = (1..26).to_a %>
 
 <% @words_array.split(" ").each do |word| %>
@@ -25,6 +24,8 @@
 <p class="wordDroplet"><%= word %></p>
 
 <% end %>
+
+<p class="instructions">Type out the words to pop the WordDrops!</p>
 
 <br>
 <p class="liveText"></p>

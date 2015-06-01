@@ -7,3 +7,5 @@ $(document).ready(function(){
 
   setHandlers();
 })
+
+setInterval(app.hideInstructions, 5500);
