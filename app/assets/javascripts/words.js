@@ -21,7 +21,7 @@ app.popWordDroplet = function wordDroplet(){
     screenText();
 
     //create variable of FIRST word bubble and inner text
-    var firstDrop = $('.wordDroplet').first().text();
+    var firstDrop = $.trim($('.wordDroplet').first().text());
 
     if (firstDrop == typedOut) {
       $('.wordDroplet').first().detach();
