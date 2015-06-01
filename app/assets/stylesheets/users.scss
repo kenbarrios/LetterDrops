@@ -8,6 +8,21 @@ body {
   font-family: sans-serif;
 }
 
+nav input[type="submit"] {
+  width: 150px;
+  height: 75px;
+  background: none;
+  border: none;
+  display: inline-block;
+  float: right;
+  font-size: 15.5px;
+  line-height: 75px;
+  text-align: center;
+}
+
+nav input[type="submit"]:hover {
+  color: white;
+}
 .menuTitle {
   text-align: center;
 }

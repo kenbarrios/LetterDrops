@@ -4,6 +4,11 @@
       Randomized Level
     </h1>
   </a>
+  <li class="navLink">
+    <%= form_tag('/log_out', method: :delete, :id => "logOut") do %>
+     <%= submit_tag "Sign-Out" %>
+     <% end %>
+  </li>
   <a href="/random">
     <li class="navLink">
       Replay
