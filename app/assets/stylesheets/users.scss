@@ -3,9 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  font-family: sans-serif;
+}
+
+.fallingPages {
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: sans-serif;
+}
+
+#homeInputs input {
+  width: 300px;
+  height: 50px;
+  display: block;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 10px auto;
+  text-align: center;
 }
 
 nav input[type="submit"] {
@@ -24,7 +37,14 @@ nav input[type="submit"]:hover {
   color: white;
 }
 .menuTitle {
+  margin: 40px auto 60px auto;
   text-align: center;
+}
+
+.menuTitle span {
+  border: solid lightblue 5px;
+  border-radius: 100px;
+  padding: 25px;
 }
 
 a {

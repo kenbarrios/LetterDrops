@@ -29,7 +29,7 @@ app.popWordDroplet = function wordDroplet(){
     } //closes if stmt
 
     //disable DELETE backpage default, and erase typos
-    $(document).keydown(function(e) {
+    $('#wordsBody').keydown(function(e) {
       if (e.keyCode == 8) {
         e.preventDefault();
         emptyArr = [];

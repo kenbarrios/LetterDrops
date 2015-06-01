@@ -1,24 +1,26 @@
-<h1 class="menuTitle">LetterDrops</h1>
+<h1 class="menuTitle"><span>L</span><span>e</span><span>t</span><span>t</span><span>e</span><span>r</span></h1>
+<h1 class="menuTitle"><span>D</span><span>r</span><span>o</span><span>p</span><span>s</span></h1>
 
+<section id='homeInputs'>
+  <%= form_for @user do |f|%>
 
-<%= form_for @user do |f|%>
+    <%= f.text_field :username, :placeholder => :username %>
+    <%= f.password_field :password, :placeholder => :password %>
+    <%= f.password_field :password_confirmation, :placeholder => :confirm_password %>
+    <%= f.submit %>
 
-  <%= f.text_field :username, :placeholder => :username %>
-  <%= f.password_field :password, :placeholder => :password %>
-  <%= f.password_field :password_confirmation, :placeholder => :confirm_password %>
-  <%= f.submit %>
+  <% end %>
 
-<% end %>
+  <br>
 
-<br>
+  <%= form_tag('/log_in', method: :post) do %>
 
-<%= form_tag('/log_in', method: :post) do %>
+     <%= text_field_tag :username, 'guest' %>
+     <%= password_field_tag :password, 'password' %>
+     <%= submit_tag "Sign-In" %>
 
-   <%= text_field_tag :username, 'guest' %>
-   <%= password_field_tag :password, 'password' %>
-   <%= submit_tag "Sign-In" %>
-
- <% end %>
+   <% end %>
+</section>
 
  <script type="text/javascript">
      $('input[name="user[password]"]').on('keyup', function(){
