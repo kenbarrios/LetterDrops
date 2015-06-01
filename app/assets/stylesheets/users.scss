@@ -130,7 +130,16 @@ nav a {
   text-align: center;
 }
 
-.mainMenu:hover {
+.mainMenu button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  width: 250px;
+  height: 75px;
+  line-height: 75px;
+}
+
+.mainMenu button:hover {
   background-color: lightblue;
   color: white;
 }

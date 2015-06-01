@@ -8,4 +8,4 @@ $(document).ready(function(){
   setHandlers();
 })
 
-setInterval(app.hideInstructions, 5500);
+setInterval(app.hideInstructions, 5000);
