@@ -1,0 +1,22 @@
+.wordDroplet {
+  height: 40px;
+  width: auto;
+  border: solid lightblue 5px;
+  border-radius: 200px;
+  display: inline-block;
+  line-height: 40px;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.liveText {
+  height: 100px;
+  width: auto;
+  display: block;
+  font-size: 90px;
+  line-height: 100px;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: underline;
+}
