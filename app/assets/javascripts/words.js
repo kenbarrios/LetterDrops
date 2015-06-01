@@ -5,7 +5,7 @@ app.popWordDroplet = function wordDroplet(){
   //create empty array to populate with keypresses
   var emptyArr = [];
 
-  $(document).keypress(function(event){
+  $('#wordsBody').keypress(function(event){
 
     //push keypresses into empty array
     emptyArr.push(String.fromCharCode(event.keyCode).toLowerCase());
