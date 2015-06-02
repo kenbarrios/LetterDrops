@@ -161,10 +161,13 @@ div {
   position: relative;
   text-align: center;
   top: -1000px;
+  -webkit-animation: drop 20s alternate;
+  -moz-animation: drop 20s alternate;
+  -o-animation: drop 20s alternate;
   animation: drop 20s alternate;
 }
 
-@keyframes drop {
+@-webkit-keyframes drop {
   0% { top: -850px;}
   33%{left:0px;}
   66%{left: 100px;}
@@ -172,7 +175,23 @@ div {
   100% { top: 800px;}
 }
 
-@-webkit-keyframes drop {
+@-moz-keyframes drop {
+  0% { top: -850px;}
+  33%{left:0px;}
+  66%{left: 100px;}
+  99% {left:0px;}
+  100% { top: 800px;}
+}
+
+@-o-keyframes drop {
+  0% { top: -850px;}
+  33%{left:0px;}
+  66%{left: 100px;}
+  99% {left:0px;}
+  100% { top: 800px;}
+}
+
+@keyframes drop {
   0% { top: -850px;}
   33%{left:0px;}
   66%{left: 100px;}
