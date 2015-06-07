@@ -7,8 +7,18 @@ body {
 }
 
 .fallingPages {
+  width: 100%;
+  height: 900px;
+  background-image: url(./forest.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.randomPage {
+  background-image: url(./sun-clouds.jpg);
 }
 
 #homeInputs input {
@@ -145,16 +155,25 @@ nav a {
 }
 
 .instructions {
-  text-align: center;
-  color: lightblue;
+  width: 90%;
+  background-color: rgba(255,255,255,.6);
+  border: solid lightblue 5px;
+  border-radius: 20px;
+  color: black;
+  display: block;
   font-size: 40px;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
 }
 
 div {
   width: 100px;
   height: 100px;
+  background-color: rgba(255,255,255,.6);
   border: solid lightblue 5px;
   border-radius: 100px;
+  color: black;
   display: inline-block;
   font-size: 50px;
   line-height: 100px;
