@@ -12,7 +12,6 @@ app.popWordDroplet = function wordDroplet(){
 
     //join any strings that get pushed into emptyArr
     var typedOut = emptyArr.join('');
-
     console.log(typedOut);
 
     function screenText(){

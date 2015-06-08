@@ -58,12 +58,13 @@ nav input[type="submit"] {
 nav input[type="submit"]:hover {
   color: white;
 }
-.menuTitle {
+
+.brandTitle {
   margin: 40px auto 60px auto;
   text-align: center;
 }
 
-.menuTitle span {
+.brandTitle span {
   border: solid lightblue 5px;
   border-radius: 100px;
   padding: 25px;
@@ -110,25 +111,7 @@ nav a {
   color: white;
 }
 
-
-.menu {
-  width: 150px;
-  height: 75px;
-  background-color: white;
-  border: solid black 1px;
-  color: black;
-  display: none;
-  line-height: 75px;
-  margin: 5px auto;
-  text-align: center;
-}
-
-.menu:hover {
-  background-color: lightblue;
-  color: white;
-}
-
-.mainMenu {
+.menuPageMenu {
   width: 250px;
   height: 75px;
   background-color: white;
@@ -140,7 +123,7 @@ nav a {
   text-align: center;
 }
 
-.mainMenu button {
+.menuPageMenu button {
   background: none;
   border: none;
   font-size: 30px;
@@ -149,7 +132,7 @@ nav a {
   line-height: 75px;
 }
 
-.mainMenu button:hover {
+.menuPageMenu button:hover {
   background-color: lightblue;
   color: white;
 }
