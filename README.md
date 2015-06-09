@@ -1,3 +1,3 @@
 == README
 
-<img src="./LetterDrops/letterDrops.gif">
+<img src="./letterDrops.gif">
