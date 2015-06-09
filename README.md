@@ -4,9 +4,7 @@ LetterDrops: A game to learn the ABCs and keyboard keys
 This is a javascript-driven video game intended to help children learn the ABCs and keyboard keys.
 
 The game is broken up into three levels:
-- Alphabetized: "droplets" of letters fall from the top of the screen. They fall in alphabetical order.
-
-The user must "pop" the droplets before they fall off of the screen by pressing the corollary letter on the keyboard.
+- Alphabetized: "droplets" of letters fall from the top of the screen. They fall in alphabetical order. The user must "pop" the droplets before they fall off of the screen by pressing the corollary letter on the keyboard.
 
 - Randomized: This level follows the same process as Alphabetized, but the droplets fall in a random order.
 
